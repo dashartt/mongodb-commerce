@@ -1,5 +1,4 @@
-db.produtos
-    .deleteMany(
+db.produtos.deleteMany(
        {
             curtidas: { $lt: 50 },
        },
