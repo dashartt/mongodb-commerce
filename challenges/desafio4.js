@@ -3,7 +3,7 @@ db.produtos
         {
             $and: [
               { vendidos: { $gt: 50 } },
-              { vendidos: { $lt: 100 } }
+              { vendidos: { $lt: 100 } },
             ],
         }, 
         { 

@@ -9,11 +9,10 @@ db.produtos.updateMany(
     },
   );
 
-
   db.produtos.updateMany(
     {
         tags: {
-            $all: ['bovino']
+            $all: ["bovino"],
         },
     },
     {
@@ -26,7 +25,7 @@ db.produtos.updateMany(
   db.produtos.updateMany(
     {
         tags: {
-            $all: ['ave']
+            $all: ["ave"],
         },
     },
     {
@@ -36,7 +35,6 @@ db.produtos.updateMany(
     },
   );
 
-
   db.produtos.find(
     {
 
@@ -45,5 +43,5 @@ db.produtos.updateMany(
         _id: false,
         nome: true,
         avaliacao: true,
-    }
+    },
   );

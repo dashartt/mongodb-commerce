@@ -3,7 +3,7 @@ db.produtos.find(
       valoresNutricionais: {
         $elemMatch: {
             $and: [
-                { tipo: 'proteínas' }, 
+                { tipo: "proteínas" }, 
                 { percentual: { $lte: 40 } },
                 { percentual: { $gte: 30 } },
             ],

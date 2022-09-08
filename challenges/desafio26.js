@@ -4,7 +4,7 @@ db.produtos.updateMany(
             $elemMatch: {
               $and: [
                 { percentual: { $gt: 20, $lt: 40 } },
-                { tipo: 'sódio' },
+                { tipo: "sódio" },
               ],
             },
         },
@@ -12,7 +12,7 @@ db.produtos.updateMany(
     {
         $push: {
             tags: {  
-                $each: ['contém sódio'],
+                $each: ["contém sódio"],
             },
         },
     },

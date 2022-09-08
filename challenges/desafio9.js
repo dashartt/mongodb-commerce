@@ -2,8 +2,8 @@ db.produtos.find(
     {
       valoresNutricionais: {
         $elemMatch: {
-          quantidade: { $lt: 500},
-          unidadeMedida: { $eq: 'kcal' },
+          quantidade: { $lt: 500 },
+          unidadeMedida: { $eq: "kcal" },
         },
       },
     },
